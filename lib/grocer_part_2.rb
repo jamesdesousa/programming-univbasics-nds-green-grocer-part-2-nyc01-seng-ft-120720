@@ -44,7 +44,8 @@ def checkout(cart, coupons)
   
    
   newcart.each do |num|
-    total = total + num[:price] * num[:count]
+    if (num[:price] * num[:count]) != 0 
+      total = total + num[:price] * num[:count]
     
   end 
   if total > 100
