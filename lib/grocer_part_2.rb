@@ -33,6 +33,9 @@ end
 end 
 
 def checkout(cart, coupons)
+  cart.each do |num|
+    num[:count]=1 
+  end 
   total = 0.0 
   conscart = consolidate_cart(cart)
   
