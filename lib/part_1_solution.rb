@@ -26,10 +26,10 @@ def consolidate_cart(cart)
         new_cart_index += 1
       end
     else
- #    grocery_item[:count] = 1
-  #    new_cart << grocery_item
-#    end
-#    index += 1
-#  end
-#  new_cart
-#end
+     grocery_item[:count] = 1
+      new_cart << grocery_item
+    end
+    index += 1
+  end
+  new_cart
+end
